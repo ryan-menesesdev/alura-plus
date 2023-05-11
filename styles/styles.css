@@ -1,0 +1,165 @@
+:root{
+    --cor-principal: #FFFFFF;
+    --cor-secundaria: #C0C0C0;
+    --cor-botao: #167BF7;
+    --cor-botao-rover: #5ea4fa;
+    --cor-botao-texto: #000000;
+    --cor-fundo: #00030C;
+    --fonte-principal: 'Inter';
+}
+
+body{
+    background-color: var(--cor-fundo);
+    color: var(--cor-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.principal{ /*segunda classe utilizada para servir como apoio na section*/
+    background-image: url("../assets/Background.png");
+    background-repeat: no-repeat; /*impede a repetição da imagem no fundo*/
+    background-size: contain; /*faz com que a imagem seja 100% vista*/
+    align-items: center;
+    text-align: center;
+}
+
+.container{
+    height: 100vh;
+    display: grid; /*forma de layout onde uma página se posiciona com linhas e colunas > facilita?*/
+    grid-template-columns: 50% 50%; /*torna os grid items em colunas que dividem metade da tela*/
+}
+
+.container__botao{
+    padding: 16px;
+    background-color: var(--cor-botao);
+    border-radius: 6px;
+    color: var(--cor-principal);
+    padding: 1em;
+    display: block; /*faz com que tds os seus filhos ocupem a linha toda*/
+    margin-bottom: 1em;
+}
+
+.botao_secundario{ /* feito no após o "container__botao" com apenas um underline por ser uma classe responsável por organizar características específicas desse segundo botão, ao mesmo tempo que absorve as características de container__botao*/
+    background-color: transparent;
+    border: 1px solid var(--cor-principal)  ;
+}
+
+.container__aviso{
+    font-size: 12px;
+    color: var(--cor-secundaria);
+}
+
+.container__titulo{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__imagem{
+    margin: 1em 0 2em 0;
+}
+
+.container__caixa{
+    margin: 0 6em;
+}
+
+.secundario__imagem{
+    width: 80%;
+}
+
+.secundario{
+    align-items: center;
+    margin: 0 10em;
+}
+
+.descricao__titulo{
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 0.2em;
+}
+
+.descricao__texto{
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--cor-secundaria);
+}
+
+.secundario__botao{
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.container__descricao{
+    padding: 2em;
+}
+
+.dispositivos{
+    text-align: center;
+}
+
+.dispositivos__titulo{
+    font-size: 48px;
+    color: var(--cor-principal);
+}
+
+.dispositivos__lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.dispositivos__lista_item{
+    font-size: 32px;
+    color: var(--cor-principal);
+}
+
+.rodape{
+    text-align: center;
+    margin: 10em 0 6em 0;
+}
+
+.rodape__lista{
+    display: flex;
+    list-style: none;
+    gap: 60px;
+    justify-content: center;
+    margin: 3em 0 2em 0 ;
+}
+
+.rodape__lista_item a{
+    font-size: 16px;
+    color: var(--cor-principal);
+}
+
+.rodape__lista_item a:hover{
+    color: var(--cor-botao);
+}
+
+.rodape__lista_item a:active{
+    color: #800080;
+}
+
+.rodape__texto{
+    color: var(--cor-secundaria);
+    font-size: 14px;
+    margin-bottom: 1.5em;
+}
+
+.container__botao:hover{
+    background-color: var(--cor-botao-rover);
+    color: var(--cor-botao-texto);
+}
+
+.botao_secundario:hover{
+    border-color: #000000;
+}
